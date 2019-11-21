@@ -43,7 +43,6 @@ create the below files automatically in the composer directory.
 
 ruby```
 require __DIR__ . '/vendor/autoload.php';
-
 /**
  * Load A class
  * By using spl autoload register,
