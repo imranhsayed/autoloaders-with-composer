@@ -1,18 +1,7 @@
 <?php
 
-/**
- * Tell your php script that any time you instantiate a class,
- * just go and look for it through this function and load it.
- * So it will only load class files for the classes that are instantiated.
- */
-spl_autoload_register( function ( $classname ) {
-	include_once 'classes/' . $classname . '.php';
-} );
-
 
 require __DIR__ . '/vendor/autoload.php';
-
-$a = new A();
 
 /**
  * Load A class
