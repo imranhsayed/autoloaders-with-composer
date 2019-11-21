@@ -41,7 +41,7 @@ create the below files automatically in the composer directory.
 
 ✅ 4. Require this `autoload.php` file in `index.php` and instantiate the `class A`.
 
-ruby```
+```ruby
 require __DIR__ . '/vendor/autoload.php';
 /**
  * Load A class
@@ -50,7 +50,7 @@ require __DIR__ . '/vendor/autoload.php';
  * after that, I will throw an error if it didn’t work”.
  */
 $a = new A();
-``
+```
 
 
         
