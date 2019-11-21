@@ -42,15 +42,15 @@ create the below files automatically in the composer directory.
 ✅ 4. Require this `autoload.php` file in `index.php` and instantiate the `class A`.
 
 ruby```
-    require __DIR__ . '/vendor/autoload.php';
-    
-    /**
-     * Load A class
-     * By using spl autoload register,
-     * PHP is telling you “I will give you the chance to go and load your class even if you didn’t load it before your statement $a = new A();
-     * after that, I will throw an error if it didn’t work”.
-     */
-    $a = new A();
+require __DIR__ . '/vendor/autoload.php';
+
+/**
+ * Load A class
+ * By using spl autoload register,
+ * PHP is telling you “I will give you the chance to go and load your class even if you didn’t load it before your statement $a = new A();
+ * after that, I will throw an error if it didn’t work”.
+ */
+$a = new A();
 ``
 
 
