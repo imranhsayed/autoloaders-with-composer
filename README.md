@@ -7,8 +7,10 @@
 ## Steps taken
 
 ✅ 1. Create two classes `A.php` and `B.php` in classes directory.
-✅ 2. Create `autoload.php` in vendor directory
-✅ 3. Add the `spl_autoload_register()` in `autoload.php` that autoloads only those classes that are instantiated likes so :
+
+✅ 2. Create `autoload.php` in vendor directory.
+
+✅ 3. Add the `spl_autoload_register()` in `autoload.php` that autoloads only those classes that are instantiated likes so. :
 
 ```ruby
     /**
@@ -22,7 +24,7 @@
 
 ```
 
-✅ 4. Require this `autoload.php` file in `index.php` and instantiate the `class A`
+✅ 4. Require this `autoload.php` file in `index.php` and instantiate the `class A`.
 
 ruby```
     require __DIR__ . '/vendor/autoload.php';
@@ -53,6 +55,7 @@ ruby```
 ✅ 6. Now when we run the command `composer install` in the root of our project, it will replace our spl_autoload_register function in the `autoload.php` with its own code and also
 create the below files automatically in the composer directory.  
 
+```ruby
 └── vendor
     ├── autoload.php
     └── composer
@@ -64,6 +67,7 @@ create the below files automatically in the composer directory.
         ├── autoload_real.php
         ├── autoload_static.php
         └── installed.json
+```
         
 ✅ 7.It will now load all of this files automatically and the class that is instantiated . So if we run in index.php, we get
 
@@ -71,7 +75,6 @@ create the below files automatically in the composer directory.
 // check the list of all loaded files
 echo '<pre>';
 print_r( get_included_files() );
-
 ```
 
 ```ruby
